@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #050816;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* Navbar */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background: rgba(5,8,22,0.7);
+    backdrop-filter: blur(15px);
+
+}
+
+
+
+.logo {
+
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
+
+.logo span {
+
+    color: #8b5cf6;
+
+}
+
+
+
+.nav-links {
+
+    display: flex;
+    gap: 25px;
+    list-style: none;
+
+}
+
+
+.nav-links a {
+
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+
+}
+
+
+
+.nav-links a:hover {
+
+    color:#8b5cf6;
+
+}
+
+
+
+#theme-toggle {
+
+    border:none;
+    background:#8b5cf6;
+    color:white;
+    padding:10px;
+    border-radius:50%;
+    cursor:pointer;
+
+}
+
+
+
+/* Hero */
+
+.hero {
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:120px 8% 50px;
+
+
+    background:
+
+    radial-gradient(circle at top left,#312e81,transparent 35%),
+    radial-gradient(circle at bottom right,#7c3aed,transparent 35%);
+
+}
+
+
+
+.hero-content {
+
+    max-width:600px;
+
+}
+
+
+
+.hello {
+
+    color:#a78bfa;
+    font-size:20px;
+
+}
+
+
+.hero h1 {
+
+    font-size:55px;
+    font-weight:800;
+
+}
+
+
+
+.hero h2 {
+
+    margin:15px 0;
+    color:#c4b5fd;
+
+}
+
+
+
+.hero p {
+
+    color:#cbd5e1;
+
+}
+
+
+
+.hero-buttons {
+
+    margin-top:30px;
+
+}
+
+
+
+.btn {
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    background:#8b5cf6;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    margin-right:15px;
+
+}
+
+
+
+.btn:hover {
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.secondary {
+
+    background:transparent;
+
+    border:1px solid #8b5cf6;
+
+}
+
+
+
+
+/* Profile Card */
+
+
+.profile-card {
+
+    width:300px;
+    height:300px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    animation:float 4s infinite ease-in-out;
+
+}
+
+
+
+@keyframes float {
+
+    50% {
+
+        transform:translateY(-20px);
+
+    }
+
+}
+
+
+
+/* Sections */
+
+
+section {
+
+    padding:90px 8%;
+
+}
+
+
+
+.section-title {
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+/* About */
+
+
+.about-box {
+
+    background:rgba(255,255,255,0.08);
+
+    padding:30px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+/* Skills */
+
+
+.skills-container {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+.skill-card {
+
+    padding:25px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.08);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,0.1);
+
+}
+
+
+
+.skill-card:hover {
+
+    transform:translateY(-10px);
+
+    background:#7c3aed;
+
+}
+
+
+
+
+/* Projects */
+
+
+#project-container {
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.project-card {
+
+    background:rgba(255,255,255,0.08);
+
+    padding:25px;
+
+    border-radius:20px;
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+
+
+/* Achievement */
+
+
+.achievement-box {
+
+    text-align:center;
+
+    background:rgba(255,255,255,0.08);
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+/* Contact */
+
+
+.contact-links a {
+
+    margin:10px;
+
+    color:#c4b5fd;
+
+    text-decoration:none;
+
+}
+
+
+
+/* Footer */
+
+
+footer {
+
+    text-align:center;
+
+    padding:30px;
+
+    background:#020617;
+
+}
+
+
+
+/* Mobile */
+
+
+@media(max-width:768px){
+
+
+.nav-links{
+
+display:none;
+
+}
+
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+
+}
